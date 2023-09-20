@@ -57,7 +57,7 @@ export default {
   left: 0;
   transform: translateX(-24.563rem);
   width: 24.563rem;
-  height: 1000px;
+  height: 300vh;
   background-color: $asideBg;
   transition: all 0.3s;
 
