@@ -1,61 +1,35 @@
 <template>
-  <div>
-    <header class="header">
-      <div class="header__logo">
-        <img
-          v-if="this.STATUS"
-          src="../assets/images/burger.svg"
-          alt="Burger"
-          class="header__logo-burger"
-          @click="CHANGE_STATUS()"
-        >
-        <img
-          v-else="!this.STATUS"
-          src="../assets/images/close.svg"
-          alt="CloseAside"
-          class="header__logo-burger"
-          @click="CHANGE_STATUS()"
-        >
-        <img
-          src="../assets/images/logo.png"
-          alt="Logo"
-        >
+  <div class="home">
+    <aside>
+      <Aside />
+    </aside>
+    <div>
+      <header>
+        <Header />
+      </header>
+      <div class="container">
 
       </div>
-    </header>
+    </div>
+
+
   </div>
 </template>
 
 <script>
-// Получаем геттеры и мутацию из vuex
-import { mapGetters, mapMutations } from 'vuex';
+import Header from '../components/header.vue';
+import Aside from '../components/aside.vue';
 export default {
-
-  computed: {
-    ...mapGetters(['STATUS'])
+  components: {
+    Header,
+    Aside
   },
-
-  methods: {
-    ...mapMutations(['CHANGE_STATUS'])
-  },
-
 }
 </script>
 
 <style lang="scss" scoped>
-.header {
-  margin-left: 23.25rem;
-  margin-top: 4.75rem;
-  // .header__logo
-
-  &__logo {
-    display: flex;
-    align-items: center;
-    gap: 3.313rem;
-
-    &-burger {
-      cursor: pointer;
-    }
-  }
+.home {
+  display: flex;
+  align-items: start;
 }
 </style>
