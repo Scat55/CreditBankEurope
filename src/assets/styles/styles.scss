@@ -1,0 +1,17 @@
+@import 'vars.scss';
+@import 'fonts.scss';
+// ==================
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $bodyColor;
+  color: $textColor;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 29.324rem;
+}
