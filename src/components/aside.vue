@@ -56,7 +56,7 @@ export default {
   top: 0;
   left: 0;
   transform: translateX(-24.563rem);
-  width: 24.563rem;
+  width: 19.563rem;
   height: 300vh;
   background-color: $asideBg;
   transition: all 0.3s;
@@ -66,7 +66,7 @@ export default {
     flex-direction: column;
     margin-top: 5.813rem;
     margin-bottom: 31.75rem;
-    margin-left: 6.188rem;
+    margin-left: 4.188rem;
     gap: 1.5rem;
 
     &-item {
@@ -83,7 +83,7 @@ export default {
   &__numbers {
     display: flex;
     flex-direction: column;
-    margin-left: 6.188rem;
+    margin-left: 4.188rem;
     justify-content: center;
     gap: 2rem;
 
