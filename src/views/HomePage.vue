@@ -9,6 +9,7 @@
       </header>
       <main class="main">
         <Premium />
+        <Travel />
       </main>
     </div>
 
@@ -20,11 +21,13 @@
 import Header from '../components/header.vue';
 import Aside from '../components/aside.vue';
 import Premium from '../components/premium.vue';
+import Travel from '../components/travel.vue';
 export default {
   components: {
     Header,
     Aside,
-    Premium
+    Premium,
+    Travel
   },
 }
 </script>
