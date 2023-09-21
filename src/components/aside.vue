@@ -56,17 +56,21 @@ export default {
   top: 0;
   left: 0;
   transform: translateX(-24.563rem);
-  width: 19.563rem;
-  height: 300vh;
+  width: 16.563rem;
+  height: 660vh;
   background-color: $asideBg;
   transition: all 0.3s;
+
+  @media(min-width: 1820px) and (max-width: 1920px) {
+    height: 940vh;
+  }
 
   &__list {
     display: flex;
     flex-direction: column;
     margin-top: 5.813rem;
     margin-bottom: 31.75rem;
-    margin-left: 4.188rem;
+    margin-left: 2.188rem;
     gap: 1.5rem;
 
     &-item {
@@ -83,7 +87,7 @@ export default {
   &__numbers {
     display: flex;
     flex-direction: column;
-    margin-left: 4.188rem;
+    margin-left: 2.188rem;
     justify-content: center;
     gap: 2rem;
 
