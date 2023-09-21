@@ -12,6 +12,7 @@
         <Travel />
         <Privileges />
         <Helper />
+        <Cart />
       </main>
     </div>
 
@@ -26,6 +27,7 @@ import Premium from '../components/premium.vue';
 import Travel from '../components/travel.vue';
 import Privileges from '../components/privileges.vue';
 import Helper from '../components/helper.vue';
+import Cart from '../components/cart.vue';
 export default {
   components: {
     Header,
@@ -33,7 +35,8 @@ export default {
     Premium,
     Travel,
     Privileges,
-    Helper
+    Helper,
+    Cart
   },
 }
 </script>
