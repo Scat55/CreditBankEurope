@@ -15,8 +15,9 @@
         <Cart />
       </main>
     </div>
-
-
+    <footer>
+      <Footer />
+    </footer>
   </div>
 </template>
 
@@ -28,6 +29,7 @@ import Travel from '../components/travel.vue';
 import Privileges from '../components/privileges.vue';
 import Helper from '../components/helper.vue';
 import Cart from '../components/cart.vue';
+import Footer from '../components/footer.vue';
 export default {
   components: {
     Header,
@@ -36,7 +38,8 @@ export default {
     Travel,
     Privileges,
     Helper,
-    Cart
+    Cart,
+    Footer
   },
 }
 </script>
