@@ -13,48 +13,57 @@
     <form
       action="#"
       class="form__form"
+      id="form__form"
       @submit.prevent="submitHandler()"
     >
       <input
         type="text"
         class="form__input"
         placeholder="ФИО"
-        required
+        v-model.trim="fullName"
+        :class="{ invalid: ($v.fullName.$dirty && !$v.fullName.required) }"
       >
+      <small
+        class="helper__text "
+        v-if="$v.fullName.$dirty && !$v.fullName.required"
+      >Некорректно введены данные</small>
       <input
-        type="email"
+        type="text"
         class="form__input"
         placeholder="Электронный адрес"
-        required
+        v-model.trim="email"
+        :class="{ invalid: ($v.email.$dirty && !$v.email.required) || ($v.email.$dirty && !$v.email.email) }"
       >
+      <small
+        class="helper__text "
+        v-if="$v.email.$dirty && !$v.email.required || $v.email.$dirty && !$v.email.email"
+      >Некорректно введены данные</small>
       <input
-        type="number"
+        type="text"
         class="form__input"
         placeholder="Номер телефона"
-        required
+        v-model.trim="number"
+        :class="{ invalid: ($v.number.$dirty && !$v.number.required) || ($v.number.$dirty && !$v.number.integer) }"
       >
+      <small
+        class="helper__text "
+        v-if="$v.number.$dirty && !$v.number.required || $v.number.$dirty && !$v.number.integer"
+      >Некорректно введены данные</small>
 
-      <div
-        required
-        class="form__select"
-      >
-        <span value="russia">Российская федерация</span>
-        <img
-          src="../assets/images/arrow.svg"
-          alt="Arrow"
-          class="form__arrow"
-          :class="{ rotate: rotate }"
-          @click="showOptions()"
-        >
-      </div>
-      <div
-        class="form__options"
-        :class="{ active: isActive }"
-      >
-        <span value="russia">Российская федерация</span>
-        <span value="belarus">Белорусь</span>
-        <span value="ukraine">Украина</span>
-        <span value="kazakhstan">Казахстан</span>
+      <Select
+        :options="contries"
+        :selected="select"
+        @select="optionSelect"
+      />
+      <div class="form__info">
+        <label class="form__info">
+          <input
+            type="checkbox"
+            class="form__chek real__chek"
+          >
+          <span class="custom__chek"></span>
+          <p class="form__subtitle">Я соглашаюсь на <span class="form__span">обработку</span> моих персональных данных</p>
+        </label>
       </div>
       <button
         class="form__btn"
@@ -65,21 +74,43 @@
 </template>
 
 <script>
+import { email, required, integer, minLength, alphaNum } from 'vuelidate/lib/validators';
+import Select from '../components/select.vue';
 export default {
+  name: 'form',
+  components: { Select },
   data() {
     return {
-      isActive: true,
-      rotate: false
+      email: '',
+      fullName: '',
+      number: '',
+      national: '',
+      contries: [
+        { value: 'Российская федерация', id: 1 },
+        { value: 'Белорусь', id: 2 },
+        { value: 'Украина', id: 3 },
+        { value: 'Казахстан', id: 4 },
+      ],
+      select: ''
     }
   },
-
+  validations: {
+    email: { email, required },
+    number: { integer, required },
+    fullName: { required, minLength: minLength(5) },
+    // national: { required }
+  },
   methods: {
-    showOptions() {
-      this.rotate = !this.rotate
-      this.isActive = !this.isActive
-    },
     submitHandler() {
-      alert('Ok')
+      // Делаем валидность
+      if (this.$v.$invalid) {
+        this.$v.$touch()
+        return
+      }
+      this.$router.push('/')
+    },
+    optionSelect(option) {
+      this.select = option.value
     }
   },
 }
@@ -137,7 +168,6 @@ export default {
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-
     border: none;
     outline: none;
 
@@ -151,44 +181,25 @@ export default {
     }
   }
 
-  &__select {
+  &__info {
     display: flex;
-    justify-content: space-between;
-    width: 680px;
-    border-radius: 10px;
-    background: rgb(39, 39, 39);
-    padding: 30px;
-    color: $textColor;
-    font-family: Geometria;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    border: none;
-    outline: none;
+    align-self: start;
+    align-items: center;
+    gap: 20px;
   }
 
-  &__options {
-    display: flex;
-    flex-direction: column;
-    gap: 31px;
-    width: 680px;
-    border-radius: 10px;
-    background: rgb(39, 39, 39);
-    padding: 30px;
-    color: $textColor;
+  &__subtitle {
+    color: #6C6C6C;
     font-family: Geometria;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    border: none;
-    outline: none;
-    transition: all .3s;
-
-
+    line-height: 113.22%;
   }
 
-  &__arrow {
-    transition: all .3s;
+  &__span {
+    color: #fff;
+    cursor: pointer;
   }
 
   &__btn {
@@ -209,11 +220,54 @@ export default {
   }
 }
 
-.active {
-  display: none;
+.invalid {
+  border: 1px solid red
 }
 
-.rotate {
-  transform: rotate(180deg);
+.helper__text {
+  align-self: start;
+  color: #CC301B;
+  font-family: Geometria;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 113.22%;
+
+}
+
+.real__chek {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.custom__chek {
+  position: relative;
+  width: 39px;
+  height: 39px;
+  background: rgb(39, 39, 39);
+  border-radius: 8px;
+  cursor: pointer;
+
+  // Рисуем галочку
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    background-image: url(../assets/images/active.svg);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.2s ease-in
+  }
+}
+
+// Активируем фейковый чекбокс
+.real__chek:checked+.custom__chek::before {
+  transform: translate(-50%, -50%) scale(1);
 }
 </style>
