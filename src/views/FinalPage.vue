@@ -32,22 +32,22 @@ export default {
     color: #FFF;
     text-align: center;
     font-family: Geometria;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-style: normal;
     font-weight: 800;
     line-height: 113.22%;
-    margin-top: 19px;
+    margin-top: 1.188rem;
   }
 
   &__subtitle {
     color: #6C6C6C;
     text-align: center;
     font-family: Geometria;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 20px;
-    margin-top: 10px;
+    line-height: 1.25rem;
+    margin-top: 0.625rem;
   }
 
 }

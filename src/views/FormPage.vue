@@ -135,7 +135,7 @@ export default {
 
     &-title {
       font-family: 'Geometria';
-      font-size: 30px;
+      font-size: 1.875rem;
       font-style: normal;
       font-weight: 800;
       line-height: 113.22%;
@@ -143,8 +143,8 @@ export default {
 
     &-btn {
       position: absolute;
-      top: -10px;
-      right: -240px;
+      top: -0.625rem;
+      right: -15rem;
       cursor: pointer;
       text-align: center;
     }
@@ -159,13 +159,13 @@ export default {
   }
 
   &__input {
-    width: 680px;
-    border-radius: 10px;
+    width: 42.5rem;
+    border-radius: 0.625rem;
     background: rgb(39, 39, 39);
-    padding: 30px;
+    padding: 1.875rem;
     color: $textColor;
     font-family: Geometria;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 500;
     border: none;
@@ -174,7 +174,7 @@ export default {
     &::placeholder {
       color: #6C6C6C;
       font-family: Geometria;
-      font-size: 20px;
+      font-size: 1.25rem;
       font-style: normal;
       font-weight: 500;
       line-height: 113.22%;
@@ -185,13 +185,13 @@ export default {
     display: flex;
     align-self: start;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
   }
 
   &__subtitle {
     color: #6C6C6C;
     font-family: Geometria;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 500;
     line-height: 113.22%;
@@ -203,7 +203,7 @@ export default {
   }
 
   &__btn {
-    width: 380px;
+    width: 23.75rem;
     border-radius: 10px;
     background: #c0965c;
     padding: 28px 47px 24px 44px;
@@ -211,7 +211,7 @@ export default {
     color: #fff;
     text-align: center;
     font-family: Geometria;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: 113.22%;
@@ -228,7 +228,7 @@ export default {
   align-self: start;
   color: #CC301B;
   font-family: Geometria;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-style: normal;
   font-weight: 500;
   line-height: 113.22%;
@@ -245,8 +245,8 @@ export default {
 
 .custom__chek {
   position: relative;
-  width: 39px;
-  height: 39px;
+  width: 2.438rem;
+  height: 2.438rem;
   background: rgb(39, 39, 39);
   border-radius: 8px;
   cursor: pointer;
@@ -255,8 +255,8 @@ export default {
   &::before {
     content: '';
     display: inline-block;
-    width: 39px;
-    height: 39px;
+    width: 2.438rem;
+    height: 2.438rem;
     background-image: url(../assets/images/active.svg);
     position: absolute;
     left: 50%;

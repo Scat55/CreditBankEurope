@@ -85,7 +85,7 @@ export default {
 
 <style lang="scss" scoped>
 .travel {
-  margin-top: 270px;
+  margin-top: 16.875rem;
 
 
   &__text {
@@ -100,18 +100,18 @@ export default {
     text-align: center;
     color: #FFF;
     font-family: Geometria;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
   }
 
   &__subtitle {
-    width: 530px;
+    width: 33.125rem;
     color: #6C6C6C;
     text-align: center;
     font-family: Geometria;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -119,40 +119,40 @@ export default {
 
   &__advantages {
     display: flex;
-    margin-top: 81px;
-    gap: 65px;
+    margin-top: 5.063rem;
+    gap: 4.063rem;
 
     &-bilets {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 1.25rem;
 
       &-img {
-        width: 56px;
-        height: 54px;
+        width: 3.5rem;
+        height: 3.375rem;
       }
 
       &-title {
-        width: 143px;
-        height: 37px;
+        width: 8.938rem;
+        height: 2.313rem;
         color: #FFF;
         font-family: Geometria;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-style: normal;
         font-weight: 800;
         line-height: normal;
       }
 
       &-subtitle {
-        width: 199px;
-        height: 84px;
+        width: 12.438rem;
+        height: 5.25rem;
 
         color: #6C6C6C;
         font-family: Geometria;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-style: normal;
         font-weight: 700;
-        line-height: 20px;
+        line-height: 1.25rem;
         /* 142.857% */
       }
     }
