@@ -107,7 +107,7 @@ export default {
         this.$v.$touch()
         return
       }
-      this.$router.push('/')
+      this.$router.push('/final')
     },
     optionSelect(option) {
       this.select = option.value
