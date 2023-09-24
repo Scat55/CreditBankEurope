@@ -66,10 +66,10 @@ export default {
 
 
   &__title {
-    margin-top: 168px;
+    margin-top: 10.5rem;
     color: #FFF;
     font-family: Geometria;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -79,17 +79,17 @@ export default {
   &__subtitle {
     color: #FFF;
     font-family: Geometria;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-align: center;
-    margin-top: 12px;
+    margin-top: 0.75rem;
 
     &-gold {
       color: #C0965C;
       font-family: Geometria;
-      font-size: 14px;
+      font-size: 0.875rem;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
@@ -97,30 +97,27 @@ export default {
   }
 
   &__bloks {
-    margin-top: 60px;
+    margin-top: 3.75rem;
     display: flex;
     align-items: center;
-    gap: 157px;
+    gap: 9.813rem;
 
     &-list {
       display: flex;
       flex-direction: column;
-      gap: 49px;
+      gap: 3.063rem;
     }
   }
 
   &__list {
     &-title {
-      width: 180px;
+      width: 11.25rem;
       color: #FFF;
       font-family: Geometria;
-      font-size: 14px;
+      font-size: 0.875rem;
       font-style: normal;
       font-weight: 700;
-      line-height: 20px;
-      /* 142.857% */
-
-
+      line-height: 1.25rem;
     }
   }
 }

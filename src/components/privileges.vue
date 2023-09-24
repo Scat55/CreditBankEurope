@@ -100,13 +100,13 @@ export default {};
 
 <style lang="scss" scoped>
 .privileges {
-  margin-top: 128px;
+  margin-top: 8rem;
 
   &__title {
     text-align: center;
     color: #fff;
     font-family: Geometria;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -114,9 +114,9 @@ export default {};
 
   &__bloks {
     display: grid;
-    grid-template: repeat(2, 280px) / repeat(3, 280px);
-    gap: 67px;
-    margin-top: 75px;
+    grid-template: repeat(2, 17.5rem) / repeat(3, 17.5rem);
+    gap: 4.188rem;
+    margin-top: 4.688rem;
     justify-content: center;
     align-items: start;
 
@@ -129,43 +129,43 @@ export default {};
       &-text {
         color: #FFF;
         font-family: Geometria;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-style: normal;
         font-weight: 800;
         line-height: normal;
-        margin-top: 8px;
+        margin-top: 0.5rem;
 
       }
 
       &-subtitle {
         color: #6C6C6C;
         font-family: Geometria;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-style: normal;
         font-weight: 700;
-        line-height: 20px;
-        margin-top: 7px;
-        height: 100px;
+        line-height: 1.25rem;
+        margin-top: 0.438rem;
+        height: 6.25rem;
       }
 
       &-images {
         display: flex;
         align-items: center;
-        margin-top: 18px;
-        gap: 28px;
+        margin-top: 1.125rem;
+        gap: 1.125rem;
         flex-wrap: wrap;
-        height: 25px;
+        height: 1.563rem;
       }
     }
   }
 }
 
 .more__width {
-  width: 84px;
-  height: 40px;
+  width: 5.25rem;
+  height: 2.5rem;
 }
 
 .wheely {
-  margin-top: 15px;
+  margin-top: 0.938rem;
 }
 </style>

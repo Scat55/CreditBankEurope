@@ -31,7 +31,7 @@
       >
       <div class="cart__credit-text">
         <p class="cart__credit-card small">Кредитная карта</p>
-        <p class="cart__credit-card">Кредитная карта</p>
+        <p class="cart__credit-card">Дебетовая карта</p>
         <router-link to="/form"><button class="cart__credit-btn">Отправить заявку</button></router-link>
         <div class="cart__credit-conditions ">
           <p class="cart__credit-conditions-text darken">Стоимость карты в год (руб.)
@@ -65,35 +65,35 @@ export default {
   &__title {
     color: #FFF;
     font-family: Geometria;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
     text-align: center;
-    margin-top: 188px;
+    margin-top: 11.75rem;
   }
 
   &__procents {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 108px;
-    margin-top: 48px;
+    gap: 6.75rem;
+    margin-top: 3rem;
 
     &-title {
       color: #6C6C6C;
       font-family: Geometria;
-      font-size: 14px;
+      font-size: 0.875rem;
       font-style: normal;
       font-weight: 700;
-      line-height: 20px;
+      line-height: 1.25rem;
 
     }
 
     &-subtitle {
       color: #C0965C;
       font-family: Geometria;
-      font-size: 36px;
+      font-size: 2.25rem;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
@@ -102,41 +102,40 @@ export default {
 
   &__credit {
     display: flex;
-    margin-top: 86px;
-    gap: 112px;
+    margin-top: 5.375rem;
+    gap: 7rem;
 
 
     &-img {
-      margin-left: 320px;
+      margin-left: 20rem;
     }
 
     &-text {
       display: flex;
       flex-wrap: wrap;
-      gap: 42px;
-      width: 400px;
+      gap: 2.625rem;
+      width: 25rem;
     }
 
     &-card {
       display: block;
       color: #6C6C6C;
       font-family: Geometria;
-      font-size: 18px;
+      font-size: 1.125rem;
       font-style: normal;
       font-weight: 700;
-      height: 0;
     }
 
     &-btn {
-      width: 380px;
-      border-radius: 10px;
+      width: 23.75rem;
+      border-radius: 0.625rem;
       background: #c0965c;
       padding: 28px 47px 24px 44px;
       outline: none;
       color: #fff;
       text-align: center;
       font-family: Geometria;
-      font-size: 24px;
+      font-size: 1.5rem;
       font-style: normal;
       font-weight: 700;
       line-height: 113.22%;
@@ -148,15 +147,15 @@ export default {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 25px;
+      gap: 1.563rem;
 
       &-text {
         color: #BBB;
         font-family: Geometria;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-style: normal;
         font-weight: 500;
-        width: 178px;
+        width: 11.125rem;
 
       }
     }
@@ -167,7 +166,7 @@ export default {
 
   color: #C0965C;
   font-family: Geometria;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
 
@@ -176,10 +175,10 @@ export default {
 .darken {
   color: #6C6C6C;
   font-family: Geometria;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
-  width: 203px;
+  width: 12.688rem;
 }
 
 .line {

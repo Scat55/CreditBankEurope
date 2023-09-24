@@ -55,11 +55,11 @@ export default {
 
 .footer {
 
-  margin-top: 241px;
-  margin-left: 329px;
+  margin-top: 15.063rem;
+  margin-left: 20.563rem;
   display: flex;
-  gap: 92px;
-  margin-bottom: 54px;
+  gap: 5.75rem;
+  margin-bottom: 3.375rem;
 
 
   &__logo {
@@ -74,10 +74,10 @@ export default {
     &-text {
       color: #6C6C6C;
       font-family: Geometria;
-      font-size: 14px;
+      font-size: 0.875rem;
       font-style: normal;
       font-weight: 500;
-      line-height: 30px;
+      line-height: 1.875rem;
       cursor: pointer;
 
     }
@@ -91,7 +91,7 @@ export default {
     &-text {
       color: #6C6C6C;
       font-family: Geometria;
-      font-size: 14px;
+      font-size: 0.875rem;
       font-style: normal;
       font-weight: 500;
     }
@@ -99,7 +99,7 @@ export default {
     &-phone {
       color: #BBB;
       font-family: Geometria;
-      font-size: 24px;
+      font-size: 1.5rem;
       font-style: normal;
       font-weight: 500;
       text-decoration: none;

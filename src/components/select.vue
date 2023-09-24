@@ -71,13 +71,13 @@ export default {
 .select {
   display: flex;
   justify-content: space-between;
-  width: 680px;
-  border-radius: 10px;
+  width: 42.5rem;
+  border-radius: 0.625rem;
   background: rgb(39, 39, 39);
-  padding: 30px;
+  padding: 1.875rem;
   color: $textColor;
   font-family: Geometria;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 500;
   border: none;
@@ -87,7 +87,7 @@ export default {
   &__text {
     color: #6C6C6C;
     font-family: Geometria;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 500;
     line-height: 113.22%;
@@ -102,15 +102,15 @@ export default {
 .options {
   display: flex;
   flex-direction: column;
-  gap: 31px;
-  width: 680px;
-  border-radius: 10px;
+  gap: 1.938rem;
+  width: 42.5rem;
+  border-radius: 0.625rem;
   background: rgb(39, 39, 39);
-  padding: 30px;
+  padding: 1.875rem;
   color: $textColor;
-  margin-top: 5px;
+  margin-top: 0.313rem;
   font-family: Geometria;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 500;
   border: none;

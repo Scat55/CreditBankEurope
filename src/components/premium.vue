@@ -47,18 +47,18 @@ export default {};
 
 .premium {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 6.25rem;
 
   &__text {
     position: relative;
     display: block;
-    width: 735px;
+    width: 45.938rem;
 
     &-title {
       display: block;
       color: $textColor;
       font-family: Geometria;
-      font-size: 96px;
+      font-size: 6rem;
       font-style: normal;
       font-weight: 900;
       line-height: normal;
@@ -68,23 +68,23 @@ export default {};
       display: inline-block;
       color: $spanColor;
       font-family: Geometria;
-      font-size: 24px;
+      font-size: 1.5rem;
       font-style: normal;
       font-weight: 800;
       line-height: normal;
-      width: 350px;
-      height: 80px;
+      width: 21.875rem;
+      height: 5rem;
     }
 
     &-img {
       position: absolute;
-      top: 116px;
-      right: -444px;
+      top: 7.25rem;
+      right: -27.75rem;
       width: 90%;
 
       @media (min-width: 1820px) and (max-width: 1920px) {
-        top: -16px;
-        right: -645px;
+        top: -1rem;
+        right: -40.313rem;
         width: 100%;
       }
     }
@@ -92,50 +92,50 @@ export default {};
 
   &__conditions {
     display: grid;
-    grid-template: repeat(2, 100px) / repeat(2, 150px);
-    margin-top: 84px;
-    gap: 40px;
+    grid-template: repeat(2, 6.25rem) / repeat(2, 9.375rem);
+    margin-top: 5.25rem;
+    gap: 2.5rem;
 
     &-miles {
       &-title {
-        width: 110px;
+        width: 6.875rem;
       }
     }
 
     &-cash {
       &-title {
-        width: 127px;
+        width: 7.938rem;
       }
     }
 
     &-remains {
       &-title {
-        width: 60px;
+        width: 3.75rem;
       }
     }
 
     &-free {
       &-title {
-        width: 100px;
+        width: 6.25rem;
       }
     }
   }
 
   &__btn {
-    width: 300px;
-    border-radius: 10px;
+    width: 18.75rem;
+    border-radius: 0.625rem;
     background: #c0965c;
     padding: 28px 47px 24px 44px;
     outline: none;
     color: #fff;
     text-align: center;
     font-family: Geometria;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: 113.22%;
     cursor: pointer;
-    margin-top: 97px;
+    margin-top: 6.063rem;
     transition: all 0.3s;
 
     &:hover {
@@ -147,7 +147,7 @@ export default {};
 .orange {
   color: #c0965c;
   font-family: Geometria;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -156,9 +156,9 @@ export default {};
 .dark_span {
   color: #6c6c6c;
   font-family: Geometria;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 1.25rem;
 }
 </style>
